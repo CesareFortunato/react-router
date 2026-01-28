@@ -6,7 +6,7 @@ function DefaultLayout() {
     <>
       <MainNav />
 
-      <main className="container my-4">
+      <main className="container-fluid p-0">
         <Outlet />
       </main>
     </>
