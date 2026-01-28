@@ -5,7 +5,7 @@ export default function MainNav() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-          MiniShop
+          <img src="../public/logoipsum-408.png" alt="logo" />
         </NavLink>
 
         <button
