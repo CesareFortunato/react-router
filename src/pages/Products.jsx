@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Card from "../components/Card";
+import CardItem from "../components/CardItem";
 
 function Products() {
 
@@ -16,23 +16,22 @@ function Products() {
     }, [])
 
     return (
-        <>
-            {products.map((product) => {
-                return (
-                    <div key={product.id}>
-                        <Card
-                            name={product.title}
-                            desc={product.description}
-                            price={product.price}
-                        />
-                    </div>
-                )
-            })}
-        </>
-    )
-
-
+        <div className="row g-3">
+            {products.map((product) => (
+                <div key={product.id} className="col-12 col-sm-6 col-lg-3 d-flex">
+                    <CardItem
+                        title={product.title}
+                        desc={product.description}
+                        price={product.price}
+                        image={product.image}
+                    />
+                </div>
+            ))}
+        </div>
+    );
 
 }
 
-export default Products
+
+
+    export default Products
