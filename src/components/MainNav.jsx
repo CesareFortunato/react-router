@@ -32,7 +32,7 @@ export default function MainNav() {
 
             <li className="nav-item">
               <NavLink
-                to="/Products"
+                to="/products"
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
@@ -43,7 +43,7 @@ export default function MainNav() {
 
             <li className="nav-item">
               <NavLink
-                to="/AboutUs"
+                to="/aboutUs"
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }

@@ -33,7 +33,7 @@ function HomePage() {
             Vestiti, elettronica e gioielli: scegli il tuo prossimo acquisto.
           </p>
 
-          <Link to="/Products" className="btn btn-primary btn-lg">
+          <Link to="/products" className="btn btn-primary btn-lg">
             Vai ai prodotti
           </Link>
         </div>
